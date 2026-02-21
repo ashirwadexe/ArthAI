@@ -64,7 +64,7 @@ const Features = () => {
   ]
 
   return (
-    <div className="px-4 sm:px-8 lg:px-20 xl:px-[120px] py-16 md:py-20 flex flex-col items-center gap-4">
+        <div className="px-4 sm:px-8 lg:px-20 xl:px-[120px] flex flex-col items-center gap-4 mt-20">
 
         {/* BADGE */}
         <div className="flex items-center gap-2 text-sm text-indigo-600 bg-indigo-400/10 rounded-full px-6 py-1.5">
@@ -78,7 +78,7 @@ const Features = () => {
         />
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl w-full border-t border-l border-zinc-200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl w-full border-t border-l border-zinc-200 lg:mt-8 md:mt-5 mt-2">
             {features.map((feature, index) => (
                 <div
                 key={index}
