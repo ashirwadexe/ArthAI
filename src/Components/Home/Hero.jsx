@@ -37,22 +37,23 @@ export default function Hero() {
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-8 transition duration-500">
-            <a href="/" className="hover:text-slate-500 transition">Home</a>
-            <a href="#features" className="hover:text-slate-500 transition">Features</a>
-            <a href="#testimonials" className="hover:text-slate-500 transition">Testimonials</a>
-            <a href="#cta" className="hover:text-slate-500 transition">Contact</a>
+            <a href="/" className="font-medium text-gray-500 hover:text-black transition-all">Home</a>
+            <a href="#features" className="font-medium text-gray-500 hover:text-black transition-all">Features</a>
+            <a href="#hiw" className="font-medium text-gray-500 hover:text-black transition-all">How to use</a>
+            <a href="#testimonials" className="font-medium text-gray-500 hover:text-black transition-all">Testimonials</a>
+            <a href="#cta" className="font-medium text-gray-500 hover:text-black transition-all">Contact</a>
           </div>
 
           {/* Desktop buttons */}
           <div className="hidden md:block space-x-3">
             <Link 
-              to='/app?state=register'
+              to='/register'
               className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md"
             >
               Get started
             </Link>
             <Link 
-              to='/app?state=login'
+              to='/login'
               className="hover:bg-slate-100 transition px-6 py-2 border border-indigo-600 rounded-md"
             >
               Login
@@ -108,13 +109,13 @@ export default function Hero() {
           </h1>
 
           <p className="text-center text-base text-slate-600 max-w-xl mt-2">
-            InvoiceAI turns your project notes into professional invoices in seconds, then keeps working — tracking payments, spotting patterns, and telling you exactly what to do next to protect your cash flow.
+            ArthAI turns your project notes into professional invoices in seconds, then keeps working — tracking payments, spotting patterns, and telling you exactly what to do next to protect your cash flow.
           </p>
 
           <div className="flex items-center gap-4 mt-8">
-            <button className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white active:scale-95 rounded-lg px-7 h-11 cursor-pointer">
+            <Link to='/login' className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white active:scale-95 rounded-lg px-7 h-11 cursor-pointer">
               Get started
-            </button>
+            </Link>
 
             <button className="flex items-center justify-center gap-2 border border-slate-600 active:scale-95 hover:bg-white/10 transition text-slate-600 rounded-lg px-8 h-11 cursor-pointer">
               <Video className="size-5"/>

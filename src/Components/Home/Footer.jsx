@@ -5,17 +5,17 @@ const Footer = () => {
     <section className='mt-20'>           
         <footer className="flex flex-col bg-indigo-50 items-center justify-around w-full py-16 text-sm text-gray-800/70">
             <div className="flex items-center gap-8">
-                <a href="#" className="font-medium text-gray-500 hover:text-black transition-all">
+                <a href="/" className="font-medium text-gray-500 hover:text-black transition-all">
                     Home
                 </a>
                 <a href="#features" className="font-medium text-gray-500 hover:text-black transition-all">
                     Features
                 </a>
-                <a href="#Testinomials" className="font-medium text-gray-500 hover:text-black transition-all">
+                <a href="#testimonials" className="font-medium text-gray-500 hover:text-black transition-all">
                     Testimonials
                 </a>
                 <a href="#hiw" className="font-medium text-gray-500 hover:text-black transition-all">
-                    How It Work
+                    How It Works
                 </a>
                 <a href="#cta" className="font-medium text-gray-500 hover:text-black transition-all">
                     Contact

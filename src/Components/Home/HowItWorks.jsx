@@ -89,7 +89,7 @@ const HowItWorks = () => {
   ]
 
   return (
-    <div className="px-4 sm:px-8 lg:px-20 xl:px-[120px] mt-20">
+    <div id='hiw' className="px-4 sm:px-8 lg:px-20 xl:px-[120px] mt-20">
 
         {/* Header */}
         <div className="text-center mb-14">

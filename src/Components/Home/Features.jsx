@@ -64,7 +64,7 @@ const Features = () => {
   ]
 
   return (
-        <div className="px-4 sm:px-8 lg:px-20 xl:px-[120px] flex flex-col items-center gap-4 mt-20">
+        <div id='features' className="px-4 sm:px-8 lg:px-20 xl:px-[120px] flex flex-col items-center gap-4 mt-20">
 
         {/* BADGE */}
         <div className="flex items-center gap-2 text-sm text-indigo-600 bg-indigo-400/10 rounded-full px-6 py-1.5">

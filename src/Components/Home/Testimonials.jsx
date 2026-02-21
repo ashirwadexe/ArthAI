@@ -45,7 +45,7 @@ const Testimonials = () => {
     );
 
     return (
-        <section className='mt-20'>
+        <section id='testimonials' className='mt-20'>
             <style>{`
                 @keyframes marqueeScroll {
                     0% { transform: translateX(0%); }
