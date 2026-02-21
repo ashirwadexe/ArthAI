@@ -15,7 +15,7 @@ const App = () => {
 
         <Route path='app' element={<Layout/>}>
           <Route index element={<Dashboard/>}/>
-          <Route path='builder/:invoiceId' element={<InvoiceBuilder/>}/>
+          <Route path='builder' element={<InvoiceBuilder/>}/>
         </Route>
 
         <Route path='view/:invoiceId' element={<Preview/>}/>

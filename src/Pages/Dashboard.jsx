@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Plus, Dot, Star, IndianRupee, ChevronUp, CircleCheckBig, Clock4, ChevronDown, Clock12, ArrowRight} from 'lucide-react'
 import InvoiceTable from '../Components/InvoiceTable';
+import {Link} from 'react-router-dom'
 
 const Dashboard = () => {
 
@@ -50,12 +51,13 @@ const Dashboard = () => {
             <Star className='size-4'/>
             Analyze with AI
           </button>
-          <button
+          <Link
+            to='/app/builder'
             className='flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 hover:scale-[1.01] cursor-pointer transition'
           >
             <Plus className='size-4'/>
             New Invoice
-          </button>
+          </Link>
         </div>
       </div>
 
