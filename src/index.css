@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #edeae2;
+  background-image: radial-gradient(ellipse at top, #f2ede4 0%, #e8e3d8 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}

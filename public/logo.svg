@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="160" viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Green gradient for finance + growth theme -->
+    <linearGradient id="arthGreenGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16A34A" />
+      <stop offset="50%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+
+    <!-- Soft glow effect -->
+    <filter id="greenGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon container circle slightly taller feel -->
+  <circle cx="80" cy="80" r="50" fill="url(#arthGreenGradient)" filter="url(#greenGlow)" />
+
+  <!-- Stylized A symbol representing Arth + AI + growth -->
+  <path d="M55 115 L80 45 L105 115 M65 88 L95 88" 
+        stroke="white" 
+        stroke-width="6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none" />
+
+  <!-- Circuit nodes representing AI automation -->
+  <circle cx="80" cy="45" r="5" fill="white" />
+  <circle cx="55" cy="115" r="5" fill="white" />
+  <circle cx="105" cy="115" r="5" fill="white" />
+
+  <!-- ArthAI text aligned with icon height -->
+  <text x="160" y="98" 
+        font-family="'Space Grotesk', 'Inter', sans-serif" 
+        font-size="56" 
+        font-weight="700" 
+        fill="url(#arthGreenGradient)">
+    ArthAI
+  </text>
+
+  
+</svg>
