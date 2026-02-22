@@ -1,5 +1,5 @@
 import React from 'react'
-import { Lock, Mail, User} from 'lucide-react'
+import { Home, Lock, Mail, Phone, User} from 'lucide-react'
 
 const Login = () => {
   const [state, setState] = React.useState("login")
@@ -7,7 +7,9 @@ const Login = () => {
   const [formData, setFormData] = React.useState({
       name: '',
       email: '',
-      password: ''
+      password: '',
+      phone:'',
+      address: ''
   })
 
   const handleSubmit = (e) => {
@@ -30,7 +32,7 @@ const Login = () => {
             </h1>
 
             <p className="text-gray-500 text-sm mt-2">
-                Please {state === "login" ? "login" : "sign up"} in to continue
+                Please {state === "login" ? "login" : "register your business"} in to continue
             </p>
 
             {state !== "login" && (
@@ -43,6 +45,21 @@ const Login = () => {
                         placeholder="Name"
                         className="w-full bg-transparent text-gray-800 placeholder-gray-400 border-none outline-none"
                         value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+            )}
+            {state !== "login" && (
+                <div className="flex items-center mt-6 w-full bg-gray-50 border border-gray-300 h-12 rounded-full overflow-hidden pl-6 gap-2">
+                    <Phone className="text-gray-500 size-4"/>
+
+                    <input
+                        type="text"
+                        name="phone"
+                        placeholder="Phone"
+                        className="w-full bg-transparent text-gray-800 placeholder-gray-400 border-none outline-none"
+                        value={formData.phone}
                         onChange={handleChange}
                         required
                     />
@@ -62,6 +79,22 @@ const Login = () => {
                     required
                 />
             </div>
+
+            {state !== "login" && (
+                <div className="flex items-center mt-6 w-full bg-gray-50 border border-gray-300 h-12 rounded-full overflow-hidden pl-6 gap-2">
+                    <Home className="text-gray-500 size-4"/>
+
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Address"
+                        className="w-full bg-transparent text-gray-800 placeholder-gray-400 border-none outline-none"
+                        value={formData.address}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+            )}
 
             <div className="flex items-center mt-4 w-full bg-gray-50 border border-gray-300 h-12 rounded-full overflow-hidden pl-6 gap-2">
                 <Lock className="text-gray-500 size-4"/>
