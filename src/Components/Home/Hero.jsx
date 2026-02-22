@@ -47,7 +47,7 @@ export default function Hero() {
           {/* Desktop buttons */}
           <div className="hidden md:block space-x-3">
             <Link 
-              to='/register'
+              to='/login'
               className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md"
             >
               Get started

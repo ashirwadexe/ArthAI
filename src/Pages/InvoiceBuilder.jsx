@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, Save } from 'lucide-react';
+import { Trash2, Plus, Save, ArrowLeft } from 'lucide-react';
+import {Link} from 'react-router-dom'
 
 const InvoiceBuilder = () => {
 
@@ -72,18 +73,13 @@ const InvoiceBuilder = () => {
   const updateItem = (id, field, value) => {
 
     const newItems = items.map(item => {
-
       if (item.id === id) {
-
         return {
           ...item,
           [field]: field === 'description' ? value : value
         };
-
       }
-
       return item;
-
     });
 
     setItems(newItems);
@@ -91,19 +87,40 @@ const InvoiceBuilder = () => {
 
 
   const updateInvoiceField = (field, value) => {
-
     setInvoiceDetails({
       ...invoiceDetails,
       [field]: value
     });
-
   };
 
 
   return (
-
     <div className="min-h-screen bg-slate-50 p-8 font-sans text-slate-700">
       <div className="max-w-6xl mx-auto space-y-6">
+
+        {/* HEADER */}
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-center gap-3'>
+            <Link to='/app'>
+              <ArrowLeft className='hover:bg-gray-200 p-2 size-9 rounded-lg cursor-pointer'/>
+            </Link>
+            <div className='flex flex-col justify-start'>
+              <h1 className='text-3xl font-bold text-slate-900'>New Invoice</h1>
+              <p className='text-sm text-slate-500'>Fill in the details to create your invoice</p>
+            </div>
+          </div>
+          <div className='flex items-center justify-center gap-3'>
+            <Link to='/app' className='px-5 py-2 border border-gray-200 rounded-lg text-sm font-medium text-slate-600 hover:bg-gray-100 transition cursor-pointer'>
+              Cancel
+            </Link>
+            <button
+              className='flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-indigo-500 text-white hover:scale-[1.01] transition cursor-pointer'
+            >
+              <Save className='size-5'/>
+              Save Invoice
+            </button>
+          </div>
+        </div>
 
         {/* SECTION 1 */}
         <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">

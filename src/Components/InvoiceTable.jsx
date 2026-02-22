@@ -1,5 +1,6 @@
 import { Eye } from 'lucide-react';
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const InvoiceTable = () => {
 
@@ -86,9 +87,10 @@ const InvoiceTable = () => {
                     </td>
 
                     <td className="px-5 py-4">
-                    <button className="text-indigo-600 hover:text-indigo-800  cursor-pointer">
+                    <Link to={'/view/resumeId'} className="text-indigo-600 hover:text-indigo-800 flex items-center gap-2 cursor-pointer">
                         <Eye className="size-5" />
-                    </button>
+                        <p>View</p>
+                    </Link>
                     </td>
 
                 </tr>
